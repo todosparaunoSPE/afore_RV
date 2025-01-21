@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidad Virtual - AFORE PENSIONISSSTE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+
+        <a-text value="Realidad Virtual - AFORE PENSIONISSSTE"
+               position="0 3 5"
+               scale="2 2 2"
+               color="black"
+               align="center">
+        </a-text>
+
+        <a-videosphere src="https://cdn.glitch.global/your-video.mp4"></a-videosphere>
+
+        <!-- Pared izquierda -->
+        <a-plane position="-5 2 0" rotation="0 90 0" width="15" height="5" color="#87CEFA">
+            <!-- Ajustar posición de las imágenes para que no se superpongan -->
+            <a-image src="/imagenes/ahorro.jpg" position="-1.5 0 0.1" width="4" height="3"></a-image>
+            <a-image src="/imagenes/compromiso.jpg" position="4 0 0.1" width="4" height="3"></a-image>
+        </a-plane>
+
+
+
+
+        <!-- Pared derecha -->
+        <a-plane position="5 2 0" rotation="0 -90 0" width="15" height="5" color="#90EE90">
+            <!-- Ajustar posición de las imágenes para que no se superpongan -->
+            <a-image src="/imagenes/remanente.jpg" position="-3.5 0 0.1" width="4" height="3"></a-image>
+            <a-image src="/imagenes/rendimientos.jpg" position="2 0 0.1" width="4" height="3"></a-image>
+        </a-plane>
+
+
+
+
+        <!-- Pared de fondo -->
+        <a-plane position="0 2 5" rotation="0 180 0" width="15" height="5" color="#FFA07A">
+            <!-- Ajustar posición de las imágenes para que no se superpongan -->
+            <a-image src="/imagenes/sorteo.jpg" position="-2.5 0 0.1" width="4" height="3"></a-image>
+            <a-image src="/imagenes/ventajas.jpg" position="2 0 0.1" width="4" height="3"></a-image>
+        </a-plane>
+
+
+
+       
+          <!-- Pared frontal (opuesta) -->
+        <a-plane position="0 2 5" rotation="0 0 0" width="15" height="5" color="#FFA07A">
+            <!-- Imagen afore.jpg en el centro de la pared frontal -->
+            <a-image src="/imagenes/afore.jpg" position="0 0.57 -23" width="24" height="12.1"></a-image>
+        </a-plane>
+        
+
+    </a-scene>
+
+    <script>
+    </script>
+</body>
+</html>
